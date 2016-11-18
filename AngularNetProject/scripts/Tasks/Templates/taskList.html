@@ -1,0 +1,16 @@
+﻿<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Mark Complete</th>
+            <th>Description</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="task in tasks | orderBy: 'date'">
+            <td><button data-id="{{task.id}}" class="btn btn-success" ng-click="markComplete(task)">Complete</button>
+            <td>{{ task.title }}</td>
+            <td>{{ task.date}}</td>
+        </tr>
+    </tbody>
+</table>

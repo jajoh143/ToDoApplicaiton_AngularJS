@@ -1,0 +1,45 @@
+﻿<!DOCTYPE>
+<html ng-app="toDoApp">
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>To Do App</title>
+    <base href="/">
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                    <span class="sr-only">Toggle Nav</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Brand</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="directives">Directives</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container" ng-view>
+
+    </div>
+    <script src="scripts/jquery-3.1.0.js"></script>
+    <script src="scripts/angular.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/angular-route.js"></script>
+    <script src="scripts/angular-resource.js"></script>
+    <script src="scripts/app.js"></script>
+    <script src="scripts/Tasks/taskController.js"></script>
+    <script src="scripts/Directives/directivesCtrl.js"></script>
+    <script src="scripts/Tasks/taskDirectives.js"></script>
+    <script src="scripts/Tasks/taskRepository.js"></script>
+    <script src="scripts/Directives/directivesD.js"></script>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</body>
+</html>

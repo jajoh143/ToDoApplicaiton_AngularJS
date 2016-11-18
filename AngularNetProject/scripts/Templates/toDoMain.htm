@@ -1,0 +1,38 @@
+﻿    <div class="page-header">
+        <h2 class="text-center">{{ message }}</h2><h4 class="btn btn-primary">Tasks: {{ numTasks() }}</h4>
+    </div>
+    <div class="panel">
+        <div class="row center-block text-center">
+            <div class="col-lg-4">
+                <label for="itemName">Item Name</label><br />
+                <input class="input" type="text" ng-model="title" required />
+            </div>
+            <div class="col-lg-4">
+                <label for="itemDate">Date for Completion</label><br />
+                <input class="input" type="text" ng-model="date" required />
+            </div>
+            <div class="col-lg-4">
+                <br />
+                <button ng-click="newTask(title, date)" class="btn btn-info">Add</button>
+            </div>
+        </div>
+        <br />
+        <hr />
+        <task-List></task-List>
+        <!--<table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Mark Complete</th>
+                    <th>Description</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="task in tasks | orderBy: 'date'">
+                    <td><button data-id="{{task.id}}" class="btn btn-success" ng-click="markComplete(task)">Complete</button>
+                    <td>{{ task.title }}</td>
+                    <td>{{ task.date}}</td>
+                </tr>
+            </tbody>
+        </table>-->
+    </div>
